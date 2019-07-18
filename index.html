@@ -1,283 +1,478 @@
-
+<!-- credits to andrew borstein! -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Materialize - Compiled and minified CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Font Awesome Icon - CSS-->
-    <script src="https://kit.fontawesome.com/8266e77d59.js"></script>
-    <!-- Custom Styles-->
-    <link rel="stylesheet" href="static/css/styles.css">
-    <title>Shannen Barrameda | Full Stack Developer</title>
-    <!-- Open Graph-->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Shannen Barrameda | Full Stack Developer">
-    <meta property="og:description" content="Welcome!">
-    <meta property="og:url" content="shanb.me">
-    <meta property="og:site_name" content="Shannen Barrameda | Full Stack Developer">
-    <meta property="article:publisher" content="andrewborstein.com">
-    <meta property="og:image" content="">
-    <meta name="author" content="Shannen Barrameda">
-    <meta name="description" content="Welcome!">
-    <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="static/img/favicon/manifest.json">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome Icon - CSS-->
+  <script src="https://kit.fontawesome.com/8266e77d59.js"></script>
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="static/css/styles.css">
+  <title>Shannen Barrameda | Full Stack Developer</title>
+  <!-- Open Graph-->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shannen Barrameda | Full Stack Developer">
+  <meta property="og:description" content="Welcome!">
+  <meta property="og:url" content="shanb.me">
+  <meta property="og:site_name" content="Shannen Barrameda | Full Stack Developer">
+  <meta property="article:publisher" content="andrewborstein.com">
+  <meta property="og:image" content="">
+  <meta name="author" content="Shannen Barrameda">
+  <meta name="description" content="Welcome!">
+  <link rel="apple-touch-icon" sizes="57x57" href="static/img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="static/img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="static/img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="static/img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="static/img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="static/img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="static/img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="static/img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="static/img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/img/favicon/manifest.json">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!--if lt IE 9script(src='//html5shim.googlecode.com/svn/trunk/html5.js')
     -->
-    <meta name="robots" content="index, follow">
-    <script>
-        window.location.replace("#main");
-    </script>
-    
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-39096633-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <meta name="google-site-verification" content="-3F1R8ekDXe8XFfCi7eIVfXOSWqlp_pWNQX2dfgKD4Y">
-  </head>
-  <body>
-    <!-- Navigation Menu-->
-    <nav class="hide-on-small-only">
-      
-      <ul id="slide-out" class="side-nav fixed sidenav sidenav-fixed" >
-          <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
-              <h1>Shannen Barrameda<span class="brown-text light">Full Stack Developer</span></h1></a></li>
-        <li class="bold"><a href="#about"><i class="far fa-user"></i>About</a></li>
-        <li class="bold"><a href="#experience"><i class="fas fa-briefcase"></i>Experience</a></li>
-        <li><a href="#projects"><i class="fas fa-tasks"></i>Projects</a></li>
-        <li><a href="#skills"><i class="fas fa-thumbtack"></i>Skills</a></li>
-        <li><a href="#awards"><i class="fas fa-award"></i>Awards</a></li>
-        <li><a href="#education"><i class="fas fa-school"></i>Education</a></li>
-        <li><a href="#contact"><i class="far fa-address-book"></i>Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    <!-- Main Content-->
-    
-    <main>
-      <section id="intro" class="section scrollspy full-height">
-        <div class="overlay"></div>
-        <div class="container">
-         >
-          
+  <meta name="robots" content="index, follow">
+  <script>
+    window.location.replace("#main");
+  </script>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-39096633-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <meta name="google-site-verification" content="-3F1R8ekDXe8XFfCi7eIVfXOSWqlp_pWNQX2dfgKD4Y">
+</head>
+
+<body>
+  <!-- Navigation Menu-->
+  <nav class="hide-on-small-only">
+
+    <ul id="slide-out" class="side-nav fixed sidenav sidenav-fixed">
+      <li class="logo"><a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo teal-text">
+          <h1>Shannen Barrameda<span class="brown-text light">Full Stack Developer</span></h1>
+        </a></li>
+      <li class="bold"><a href="#about"><i class="far fa-user"></i>About</a></li>
+      <li class="bold"><a href="#experience"><i class="fas fa-briefcase"></i>Experience</a></li>
+      <li><a href="#projects"><i class="fas fa-tasks"></i>Projects</a></li>
+      <li><a href="#skills"><i class="fas fa-thumbtack"></i>Skills</a></li>
+      <li><a href="#awards"><i class="fas fa-award"></i>Awards</a></li>
+      <li><a href="#education"><i class="fas fa-school"></i>Education</a></li>
+      <li><a href="#contact"><i class="far fa-address-book"></i>Contact</a></li>
+    </ul>
+  </nav>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <!-- Main Content-->
+
+  <main>
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        >
+
+      </div>
+    </section>
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">
+        <blockquote>
+          <h2></h2>
+        </blockquote>
+
+
+      </div>
+    </section>
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2"></div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title">
+                    <a href="https://www.jpmorgan.com/country/US/en/jpmorgan" target="_blank"
+                      class="teal-text hoverline">JP Morgan Chase & Co.</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text">Front-End Software Developer</div>
+            <p><em class="grey-text">Software Engineering Program (SEP) Intern</em></p>
+            <h6>Developing the Product</h6>
+            <ul>
+              <li>Optimize the rekeying (i.e. the updating) of transactions in numerous industries like Retail and
+                Petroleum</li>
+              <li>Migrated legacy application to an aesthetic, modular web application </li>
+              <li>Collaborate with an Agile team of 5 interns and 7 full-time employees</li>
+            </ul>
+          </div>
+          <div class="card-action"><span>June 2019 - Present | Plano, TX</span></div>
         </div>
-      </section>
-      <section id="about" class="section scrollspy">
-        <h3 class="page-title white-text teal">About</h3>
-        <div class="container flow-text">
-          <blockquote>
-            <h2></h2>
-          </blockquote>
-          
-         
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2"></div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title">
+                    <a href="https://www.acmutd.co/" target="_blank"
+                      class="teal-text hoverline">The Association for Computing Machinery (ACM)</a>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text">President</div>
+            <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of Texas at Dallas</em></p> 
+            <ul>
+              <li> Delegate tasks to a board of 12 Directors spanning ACM's 5 divisions - Projects, Labs, Industry,
+                HackUTD, Outreach</li>
+              <li>Establish long-range objectives of the organization and develop strategies to achieve them</li>
+              <li>Improve relations among UTD faculty and representatives from student organizations as well as
+                communities outside UTD</li>
+              <li>
+                Diversify UTD's tech landscape by organizing and marketing over 30 tech and professional improvement
+                workshops and tech talks and overseeing UTD's own hackathon, HackUTD</li>
+              <li>
+                Assist the expansion of the Projects subdivision to involve 15 more experienced individuals in a
+                competitive, tech start-up environment
+              </li>
+            </ul>
+            <div class="card-action"><span>December 2018 - Present | Richardson, TX</span></div>
+          </div>
         </div>
-      </section>
-      <section id="experience" class="section scrollspy">
-        <h3 class="page-title white-text teal">Experience</h3>
-        <div class="container">
-          <div class="card">
+        <div class="card">
             <div class="card-content">
               <div class="row">
                 <div class="col s12 m2"></div>
                 <div class="col s12 m10">
-                  
+                  <p>
+                    <span class="card-title">
+                      <a href="https://csmc.utdallas.edu/" target="_blank"
+                        class="teal-text hoverline">The Computer Science Mentor Center (CSMC) at UTD</a>
+                    </span>
+                  </p>
                 </div>
               </div>
-              <div class="role brown-text">Full-Stack Software Developer</div>
-              <p><em class="grey-text"></em></p>
-              
-            <div class="card-action"><span></span></div>
+              <div class="role brown-text">Mentor</div>
+              <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of Texas at Dallas</em></p> 
+              <ul>
+                 <li> Guide university students in the understanding of fundamental computer science concepts</li>
+                 <li>Assist in the formulation of logic for the completion of various computer science projects</li>
+                 <li>Discrete Math I/II, CS I/II, Computer Arch, Data Structures, Organization of Programming Languages</li>
+              </ul>
+              <div class="card-action"><span>September 2018 - Present | Richardson, TX</span></div>
+            </div>
           </div>
+          <div class="card">
+              <div class="card-content">
+                <div class="row">
+                    <div class="col s12 m2"></div>
+                    <div class="col s12 m10">
+                      <p>
+                        <span class="card-title">
+                          <a href="https://www.acmutd.co/" target="_blank"
+                            class="teal-text hoverline">The Association for Computing Machinery</a>
+                        </span>
+                      </p>
+                    </div>
+                </div>
+                <div class="role brown-text">Director of Projects</div>
+                <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at Dallas</em></p> 
+                <ul>
+                     <li>Oversaw the most competitive CS program on campus with an acceptance of less than 10%</li> 
+                     <li>Collaborated with 5 other executives from project choice to development and completion</li>
+                     <li>Provided 30 participants with exciting learning and social experiences with emerging technologies in Natural Language Processing, Artificial Intelligence, gaming, Machine Learning, etc. </li>
+                     <li>Mentored a team of 4 to build an Android app that suggests the user to bet or not depending on the card that the application sees in a game of BlackJack</li>
+                     <li>Tools: Android Studio, Mobile App Dev, Java, XML, Python, OpenCV</li>
+                </ul>
+                <div class="card-action"><span>April 2018 - December 2018 | Richardson, TX</span></div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                  <div class="row">
+                      <div class="col s12 m2"></div>
+                      <div class="col s12 m10">
+                        <p>
+                          <span class="card-title">
+                            <a href="https://www.acmutd.co/" target="_blank"
+                              class="teal-text hoverline">The Association for Computing Machinery</a>
+                          </span>
+                        </p>
+                      </div>
+                  </div>
+                  <div class="role brown-text">Mentor</div>
+                  <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at Dallas</em></p> 
+                  <ul>
+                       <li>Contacted and acquired industry professionals to provide insightful, relevant talks and workshops to our 25 participants</li>
+                       <li>Mentored winning team of 5 participants to produce a web application that displays past and present trends of popular cryptocurrencies while providing social connotations from Facebook and Twitter</li>
+                       <li>Resolved debugging and logic issues as well as team conflicts</li>
+                       <li>Tools: IBM Watson API, CryptoCompare API, JavaSript, Bootstrap</li>
+                  </ul>
+                  <div class="card-action"><span>November 2017 - April 2018 | Richardson, TX</span></div>
+                </div>
+              </div>
           
-         </div>
-        </div>
-      </section>
-      <section id="projects" class="section scrollspy">
-        <h3 class="page-title white-text teal">Projects</h3>
-        <div class="container">
-          <div class="row">
-            <!-- Interpol8r-->
-            <div class="col s12 m6 l4">
-              <div class="card medium">
-                <div class="card-image waves-effect waves-block waves-light"></div>
-                <div class="card-content"><span class="card-title activator teal-text hoverline"><i class="mdi-navigation-more-vert right"></i></span>
-                 
-                </div>
-                <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span>
-                  
-                  <div class="card-action"></div>
-                </div>
-              </div>
-            </div>
-            <!-- BlogSpire-->
-            </div>
-        </div>
-      </section>
-      <section id="skills" class="section scrollspy">
-        <h3 class="page-title white-text teal">Skills</h3>
-        <div class="container">
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">HTML</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="static/img/html5.png" class="responsive-img">HTML5</div>
-                <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">JSX</div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">CSS</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="static/img/css3.png" class="responsive-img">CSS3</div>
-                <div class="col s4 m2"><img alt="" src="static/img/sass.png" class="responsive-img">SASS</div>
-                <div class="col s4 m2"><img alt="" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
-                <!-- <div class="col s4 m2"><img alt="" src="static/img/foundation.png" class="responsive-img">Foundation</div> -->
-                <!-- <div class="col s4 m2"><img alt="" src="static/img/materialize.png" class="responsive-img">Materialize</div> -->
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">Javascript</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">React</div>
-                <div class="col s4 m2"><img alt="" src="static/img/javascript.png" class="responsive-img">Javascript</div>
-                <div class="col s4 m2"><img alt="" src="static/img/jquery.png" class="responsive-img">jQuery</div>
-                <div class="col s4 m2"><img alt="" src="static/img/angular.png" class="responsive-img">Angular</div>
-                <div class="col s4 m2"><img alt="" src="static/img/nodejs.png" class="responsive-img">Node</div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">Build Tools</h4>
-              <div class="row text-center">
-                <div class="col s4 m2">NPM</div>
-                <div class="col s4 m2">Yarn</div>
-                <div class="col s4 m2">Pip</div>
+      </div>
+      </div>
+    </section>
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
+          <!-- Interpol8r-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light"></div>
+              <div class="card-content"><span class="card-title activator teal-text hoverline"><i
+                    class="mdi-navigation-more-vert right"></i></span>
 
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">CMS</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="static/img/wordpress.png" class="responsive-img">Wordpress</div>
-                <div class="col s4 m2"><img alt="" src="static/img/tumblr.png" class="responsive-img">Tumblr</div>
-                <!-- <div class="col s4 m2"><img alt="" src="static/img/squarespace.png" class="responsive-img">Squarespace</div> -->
+              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i
+                    class="mdi-navigation-close right"></i></span>
+
+                <div class="card-action"></div>
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-content">
-              <h4 class="brown-text light">Other</h4>
-              <div class="row text-center">
-                <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">Github</div>
-                <!-- <div class="col s4 m2"><img alt="" src="static/img/heroku.png" class="responsive-img">Heroku</div>
+          <!-- BlogSpire-->
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">HTML</h4>
+            <div class="row text-center">
+              <div class="col s4 m2"><img alt="" src="static/img/html5.png" class="responsive-img">HTML5</div>
+              <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">JSX</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">CSS</h4>
+            <div class="row text-center">
+              <div class="col s4 m2"><img alt="" src="static/img/css3.png" class="responsive-img">CSS3</div>
+              <div class="col s4 m2"><img alt="" src="static/img/sass.png" class="responsive-img">SASS</div>
+              <div class="col s4 m2"><img alt="" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
+              <!-- <div class="col s4 m2"><img alt="" src="static/img/foundation.png" class="responsive-img">Foundation</div> -->
+              <!-- <div class="col s4 m2"><img alt="" src="static/img/materialize.png" class="responsive-img">Materialize</div> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Javascript</h4>
+            <div class="row text-center">
+              <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">React</div>
+              <div class="col s4 m2"><img alt="" src="static/img/javascript.png" class="responsive-img">Javascript</div>
+              <div class="col s4 m2"><img alt="" src="static/img/jquery.png" class="responsive-img">jQuery</div>
+              <div class="col s4 m2"><img alt="" src="static/img/angular.png" class="responsive-img">Angular</div>
+              <div class="col s4 m2"><img alt="" src="static/img/nodejs.png" class="responsive-img">Node</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Build Tools</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">NPM</div>
+              <div class="col s4 m2">Yarn</div>
+              <div class="col s4 m2">Pip</div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">CMS</h4>
+            <div class="row text-center">
+              <div class="col s4 m2"><img alt="" src="static/img/wordpress.png" class="responsive-img">Wordpress</div>
+              <div class="col s4 m2"><img alt="" src="static/img/tumblr.png" class="responsive-img">Tumblr</div>
+              <!-- <div class="col s4 m2"><img alt="" src="static/img/squarespace.png" class="responsive-img">Squarespace</div> -->
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+              <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">Github</div>
+              <!-- <div class="col s4 m2"><img alt="" src="static/img/heroku.png" class="responsive-img">Heroku</div>
                 <div class="col s4 m2"><img alt="" src="static/img/photoshop.png" class="responsive-img">Photoshop</div> -->
-                <div class="col s4 m2"><img alt="" src="static/img/fcpx.png" class="responsive-img">Final Cut Pro</div>
-              </div>
+              <div class="col s4 m2"><img alt="" src="static/img/fcpx.png" class="responsive-img">Final Cut Pro</div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="awards" class="section scrollspy">
-        <h3 class="page-title white-text teal">Awards</h3>
-        <div class="container">
+      </div>
+    </section>
+    <section id="awards" class="section scrollspy">
+      <h3 class="page-title white-text teal">Awards</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                  <p><span class="card-title"><a href="https://ghc.anitab.org/" target="_blank" class="teal-text hoverline">Grace Hopper Celebration (GHC)</a></span></p>
+                  <p class="brown-text">AnitaB.org Foundation - GHC Scholar | May 2019</p>
+                  <ul>
+                    <li>Awarded to less than 700 students internationally to attend the largest four-day conference for women in computing all-expenses paid</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                    <p><span class="card-title"><a href="https://utdallas.edu/" target="_blank" class="teal-text hoverline">The University of Texas at Dallas</a></span></p>
+                    <p class="brown-text">UT Dallas Dean's List | Fall '17, Spring '18</p>
+                    <ul>
+                      <li>Jonsson School of Engineering and Computer Science</li>
+                      <li>Awarded to top 10% of students in their respective colleges</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-content">
+                        <p><span class="card-title"><a href="https://www.ncwit.org/project/aspirations-computing" target="_blank" class="teal-text hoverline">National Center for Women in IT</a></span></p>
+                        <p class="brown-text">Regional Winner in LA and OC | May '16, May '17</p>
+                        <ul>
+                            <li>Among 8,600 young women chosen for demonstrated interest and achievements in computing, leadership ability, academic performance</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <div class="col s12 m6">
+                
+                    <div class="card">
+                      <div class="card-content">
+                          <p><span class="card-title"><a href="https://www.nationalmerit.org/s/1758/start.aspx?gid=2&pgid=61" target="_blank" class="teal-text hoverline">National Merit Scholarship Corporation</a></span></p>
+                          <p class="brown-text">National Merit Finalist | May 2017</p>
+                          <ul>
+                            <li>In recognition of excellence on the National Merit Scholarship Qualifying Test (NMSQT) in California</li>
+                          </ul>
+                      </div>
+                    </div>
+                  </div>
+                
+          </div>
           <div class="row">
             <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                  
-                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <p><span class="card-title"><a href="http://asianpacificfund.org/what-we-do/scholarships/apply-for-scholarship/#banatao" target="_blank" class="teal-text hoverline">Banatao Family Filipino American Education Fund</a></span></p>
+                        <p class="brown-text">Banatao Scholar | May 2017</p>
+                        <ul>
+                          <li>One of 7 chosen among over 100 incoming Filipino-American STEM undergraduates from California</li>
+                          <li>Recognized for excellence and demonstrated interest in STEM as well as plans for higher education</li>
+                        </ul>
+                    </div>
+                  </div>
+              </div>
+              
+            </div>
+          
+      </div>
+    </section>
+    <section id="education" class="section scrollspy">
+      <h3 class="page-title white-text teal">Education</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="http://utdallas.edu" class="teal-text hoverline">The University of
+                      Texas at Dallas</a></span></p>
+                <p class="brown-text"> Richardson, TX </p>
+                <ul>
+                  <li>B.S. in Computer Science</li>
+                  <li>B.S. in Cognitive Science</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="http://dbhs.org" class="teal-text hoverline">Diamond Bar High
+                      School</a></span></p>
+                <p class="brown-text"> Diamond Bar, CA </p>
+                <ul>
+                  <li>High School Diploma</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section id="education" class="section scrollspy">
-        <h3 class="page-title white-text teal">Education</h3>
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                  <p><span class="card-title"><a href="http://utdallas.edu" class="teal-text hoverline">The University of Texas at Dallas</a></span></p>
-                  <p class="brown-text"> Richardson, TX </p>
-                  <ul>
-                    <li>B.S. in Computer Science</li>
-                    <li>B.S. in Cognitive Science</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                  <p><span class="card-title"><a href="http://dbhs.org" class="teal-text hoverline">Diamond Bar High School</a></span></p>
-                  <p class="brown-text"> Diamond Bar, CA </p>
-                  <ul>
-                    <li>High School Diploma</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact" class="section scrollspy full-height">
-        <h3 class="page-title white-text teal">Contact</h3>
-        <div class="container">
-          <p><a aria-label="Email Shannen" href="mailto:sbarrameda17@gmail.com" data-position="top" data-tooltip="Email Shannen" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fa fa-envelope"></i><a alt="" href="mailto:andrew@andrewborstein.com" class="hoverline">sbarrameda17@gmail.com</a></a></p>
-          <p><a aria-label="View Shannen GitHub" href="http://github.com/ShannenB" target="_blank" data-position="top" data-tooltip="View Shannen on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i><a alt="" href="http://github.com/andrewborstein" class="hoverline">github.com/ShannenB</a></a></p>
-          <p><a aria-label="View Shannen LinkedIn" href="http://linkedin.com/in/shannen-barrameda" target="_blank" data-position="top" data-tooltip="View Shannen on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-linkedin"></i><a alt="" href="http://linkedin.com/in/andrewborstein" class="hoverline">linkedin.com/in/shannen-barrameda</a></a></p>
-        </div>
-      </section>
-    </main>
-    <!-- jQuery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Materialize - Compiled and minified JavaScript-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-    <script>
-      // Materialize - Initializers
-      $(document).ready(function(){
-        $('.scrollspy').scrollSpy();
-        // Initialize collapse button
-        $(".button-collapse").sideNav({
-            menuWidth: 190, // Default is 240
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-          }
-        );
-      });
-    </script>
+      </div>
+    </section>
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <p><a aria-label="Email Shannen" href="mailto:sbarrameda17@gmail.com" data-position="top"
+            data-tooltip="Email Shannen" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+              class="fa fa-envelope"></i><a alt="" href="mailto:sbarrameda17@gmail.com"
+              class="hoverline">sbarrameda17@gmail.com</a></a></p>
+        <p><a aria-label="View Shannen GitHub" href="http://github.com/ShannenB" target="_blank" data-position="top"
+            data-tooltip="View Shannen on GitHub"
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-github"></i><a
+              alt="" href="http://github.com/ShannenB" class="hoverline">github.com/ShannenB</a></a></p>
+        <p><a aria-label="View Shannen LinkedIn" href="http://linkedin.com/in/shannen-barrameda" target="_blank"
+            data-position="top" data-tooltip="View Shannen on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i class="fab fa-linkedin"></i><a
+              alt="" href="http://linkedin.com/in/shannen-barrameda"
+              class="hoverline">linkedin.com/in/shannen-barrameda</a></a></p>
+      </div>
+    </section>
+  </main>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $('.scrollspy').scrollSpy();
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      }
+      );
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
