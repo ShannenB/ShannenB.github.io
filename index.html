@@ -39,6 +39,10 @@
   <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="static/img/favicon/manifest.json">
+  <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> -->
+  <!-- load bootstrap -->
+  <!-- <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/2.1.0/animate.min.css">load animate -->
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="static/img/favicon/ms-icon-144x144.png">
@@ -47,7 +51,7 @@
     -->
   <meta name="robots" content="index, follow">
   <script>
-    window.location.replace("#main");
+    window.location.replace("#intro");
   </script>
 
   <script>
@@ -72,13 +76,13 @@
           class="brand-logo teal-text">
           <h1>Shannen Barrameda<span class="brown-text light">Full Stack Developer</span></h1>
         </a></li>
-      <li class="bold"><a href="#about"><i class="far fa-user"></i>About</a></li>
-      <li class="bold"><a href="#experience"><i class="fas fa-briefcase"></i>Experience</a></li>
-      <li><a href="#projects"><i class="fas fa-tasks"></i>Projects</a></li>
-      <li><a href="#skills"><i class="fas fa-thumbtack"></i>Skills</a></li>
-      <li><a href="#awards"><i class="fas fa-award"></i>Awards</a></li>
-      <li><a href="#education"><i class="fas fa-school"></i>Education</a></li>
-      <li><a href="#contact"><i class="far fa-address-book"></i>Contact</a></li>
+      <li class="bold"><a href="#about" id="nav"><i class="far fa-user"></i>About</a></li>
+      <li class="bold"><a href="#experience" id="nav"><i class="fas fa-briefcase"></i>Experience</a></li>
+      <li class="bold"><a href="#projects" id="nav"><i class="fas fa-tasks"></i>Projects</a></li>
+      <li class="bold"><a href="#skills" id="nav"><i class="fas fa-thumbtack"></i>Skills</a></li>
+      <li><a href="#awards" id="nav"><i class="fas fa-award"></i>Awards</a></li>
+      <li><a href="#education" id="nav"><i class="fas fa-school"></i>Education</a></li>
+      <li><a href="#contact" id="nav"><i class="far fa-address-book"></i>Contact</a></li>
     </ul>
   </nav>
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -86,24 +90,52 @@
 
   <main>
     <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
+      <div class="overlay"><img src="me.jpg" style="float: right; height: 100%"></div>
       <div class="container">
-        >
-
+          <div id="logo">
+            <span id="danger">
+                <span class="dd animated bounceInDown">S</span>
+                <span class="da animated bounceInDown">h</span>
+                <span class="dn animated bounceInDown">a</span>
+                <span class="dg animated bounceInDown">n</span>
+                <span class="de animated bounceInDown">n</span>
+                <span class="dr animated bounceInDown">e</span>
+                <span class="zz animated bounceInDown">n</span>
+            </span>
+            <span id="zone">
+                <span class="zz animated bounceInDown">B</span>
+                <span class="zo animated bounceInDown">a</span>
+                <span class="zn animated bounceInDown">r</span>
+                <span class="ze animated bounceInDown">r</span>
+                <span class="dd animated bounceInDown">a</span>
+                <span class="da animated bounceInDown">m</span>
+                <span class="dn animated bounceInDown">e</span>
+                <span class="dg animated bounceInDown">d</span>
+                <span class="dr animated bounceInDown">a</span>
+            </span>
+          </div>
       </div>
     </section>
     <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
+      <h3 class="page-title white-text teal">About<a href="#experience"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container flow-text">
-        <blockquote>
-          <h2></h2>
-        </blockquote>
 
+        <blockquote>Student. Scholar. Engineer.</blockquote>
+        <p>As a first-generation Asian-American daughter of two nurses, healthcare was the obvious chase for me.
+          However, my interests in technology stemmed from the language barriers (Mandarin, Bisaya, Hokkien, Cantonese)
+          that impede me from communicating with relatives all over Asia. Through my studies, I hope to improve
+          translation tools like Google
+          Translate through natural language processing and AI, breaking language barriers with relatives as a result.
+        </p>
+        <p><strong>Interests: </strong>AI, Computational Modeling, Cybersecurity, Linguistics</p>
+        <p><strong>Hobbies: </strong>Figure Skating, Dance, Calligraphy, Art, Cooking</p>
 
       </div>
     </section>
     <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+      <h3 class="page-title white-text teal">Experience<a href="#projects"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container">
         <div class="card">
           <div class="card-content">
@@ -137,14 +169,15 @@
               <div class="col s12 m10">
                 <p>
                   <span class="card-title">
-                    <a href="https://www.acmutd.co/" target="_blank"
-                      class="teal-text hoverline">The Association for Computing Machinery (ACM)</a>
+                    <a href="https://www.acmutd.co/" target="_blank" class="teal-text hoverline">The Association for
+                      Computing Machinery (ACM)</a>
                   </span>
                 </p>
               </div>
             </div>
             <div class="role brown-text">President</div>
-            <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of Texas at Dallas</em></p> 
+            <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of
+                Texas at Dallas</em></p>
             <ul>
               <li> Delegate tasks to a board of 12 Directors spanning ACM's 5 divisions - Projects, Labs, Industry,
                 HackUTD, Outreach</li>
@@ -163,106 +196,148 @@
           </div>
         </div>
         <div class="card">
-            <div class="card-content">
-              <div class="row">
-                <div class="col s12 m2"></div>
-                <div class="col s12 m10">
-                  <p>
-                    <span class="card-title">
-                      <a href="https://csmc.utdallas.edu/" target="_blank"
-                        class="teal-text hoverline">The Computer Science Mentor Center (CSMC) at UTD</a>
-                    </span>
-                  </p>
-                </div>
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2"></div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title">
+                    <a href="https://csmc.utdallas.edu/" target="_blank" class="teal-text hoverline">The Computer
+                      Science Mentor Center (CSMC) at UTD</a>
+                  </span>
+                </p>
               </div>
-              <div class="role brown-text">Mentor</div>
-              <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of Texas at Dallas</em></p> 
-              <ul>
-                 <li> Guide university students in the understanding of fundamental computer science concepts</li>
-                 <li>Assist in the formulation of logic for the completion of various computer science projects</li>
-                 <li>Discrete Math I/II, CS I/II, Computer Arch, Data Structures, Organization of Programming Languages</li>
-              </ul>
-              <div class="card-action"><span>September 2018 - Present | Richardson, TX</span></div>
             </div>
+            <div class="role brown-text">Mentor</div>
+            <p><em class="grey-text">Building a greater, more collaborative engineering community at The University of
+                Texas at Dallas</em></p>
+            <ul>
+              <li> Guide university students in the understanding of fundamental computer science concepts</li>
+              <li>Assist in the formulation of logic for the completion of various computer science projects</li>
+              <li>Discrete Math I/II, CS I/II, Computer Arch, Data Structures, Organization of Programming Languages
+              </li>
+            </ul>
+            <div class="card-action"><span>September 2018 - Present | Richardson, TX</span></div>
           </div>
-          <div class="card">
-              <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2"></div>
-                    <div class="col s12 m10">
-                      <p>
-                        <span class="card-title">
-                          <a href="https://www.acmutd.co/" target="_blank"
-                            class="teal-text hoverline">The Association for Computing Machinery</a>
-                        </span>
-                      </p>
-                    </div>
-                </div>
-                <div class="role brown-text">Director of Projects</div>
-                <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at Dallas</em></p> 
-                <ul>
-                     <li>Oversaw the most competitive CS program on campus with an acceptance of less than 10%</li> 
-                     <li>Collaborated with 5 other executives from project choice to development and completion</li>
-                     <li>Provided 30 participants with exciting learning and social experiences with emerging technologies in Natural Language Processing, Artificial Intelligence, gaming, Machine Learning, etc. </li>
-                     <li>Mentored a team of 4 to build an Android app that suggests the user to bet or not depending on the card that the application sees in a game of BlackJack</li>
-                     <li>Tools: Android Studio, Mobile App Dev, Java, XML, Python, OpenCV</li>
-                </ul>
-                <div class="card-action"><span>April 2018 - December 2018 | Richardson, TX</span></div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2"></div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title">
+                    <a href="https://www.acmutd.co/" target="_blank" class="teal-text hoverline">The Association for
+                      Computing Machinery</a>
+                  </span>
+                </p>
               </div>
             </div>
-            <div class="card">
-                <div class="card-content">
-                  <div class="row">
-                      <div class="col s12 m2"></div>
-                      <div class="col s12 m10">
-                        <p>
-                          <span class="card-title">
-                            <a href="https://www.acmutd.co/" target="_blank"
-                              class="teal-text hoverline">The Association for Computing Machinery</a>
-                          </span>
-                        </p>
-                      </div>
-                  </div>
-                  <div class="role brown-text">Mentor</div>
-                  <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at Dallas</em></p> 
-                  <ul>
-                       <li>Contacted and acquired industry professionals to provide insightful, relevant talks and workshops to our 25 participants</li>
-                       <li>Mentored winning team of 5 participants to produce a web application that displays past and present trends of popular cryptocurrencies while providing social connotations from Facebook and Twitter</li>
-                       <li>Resolved debugging and logic issues as well as team conflicts</li>
-                       <li>Tools: IBM Watson API, CryptoCompare API, JavaSript, Bootstrap</li>
-                  </ul>
-                  <div class="card-action"><span>November 2017 - April 2018 | Richardson, TX</span></div>
-                </div>
+            <div class="role brown-text">Director of Projects</div>
+            <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at
+                Dallas</em></p>
+            <ul>
+              <li>Oversaw the most competitive CS program on campus with an acceptance of less than 10%</li>
+              <li>Collaborated with 5 other executives from project choice to development and completion</li>
+              <li>Provided 30 participants with exciting learning and social experiences with emerging technologies in
+                Natural Language Processing, Artificial Intelligence, gaming, Machine Learning, etc. </li>
+              <li>Mentored a team of 4 to build an Android app that suggests the user to bet or not depending on the
+                card that the application sees in a game of BlackJack</li>
+              <li>Tools: Android Studio, Mobile App Dev, Java, XML, Python, OpenCV</li>
+            </ul>
+            <div class="card-action"><span>April 2018 - December 2018 | Richardson, TX</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2"></div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title">
+                    <a href="https://www.acmutd.co/" target="_blank" class="teal-text hoverline">The Association for
+                      Computing Machinery</a>
+                  </span>
+                </p>
               </div>
-          
+            </div>
+            <div class="role brown-text">Mentor</div>
+            <p><em class="grey-text">Developing students' computer science fundamentals at The University of Texas at
+                Dallas</em></p>
+            <ul>
+              <li>Contacted and acquired industry professionals to provide insightful, relevant talks and workshops to
+                our 25 participants</li>
+              <li>Mentored winning team of 5 participants to produce a web application that displays past and present
+                trends of popular cryptocurrencies while providing social connotations from Facebook and Twitter</li>
+              <li>Resolved debugging and logic issues as well as team conflicts</li>
+              <li>Tools: IBM Watson API, CryptoCompare API, JavaSript, Bootstrap</li>
+            </ul>
+            <div class="card-action"><span>November 2017 - April 2018 | Richardson, TX</span></div>
+          </div>
+        </div>
+
       </div>
       </div>
     </section>
     <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
+      <h3 class="page-title white-text teal">Projects<a href="#skills"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container">
         <div class="row">
-          <!-- Interpol8r-->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light"></div>
-              <div class="card-content"><span class="card-title activator teal-text hoverline"><i
-                    class="mdi-navigation-more-vert right"></i></span>
-
+              <div class="card-content"><span class="card-title activator teal-text hoverline">WaldoBot<i
+                    class="fas fa-ellipsis-v" style="float:right"></i></span>
+                <p>An e-commerce chatbot specifically designed to return the top three to five item searches given
+                  certain criteria (i.e. color, size, price) from the user </p>
               </div>
-              <div class="card-reveal"><span class="card-title brown-text">Accomplishments<i
-                    class="mdi-navigation-close right"></i></span>
-
+              <div class="card-reveal"><span class="card-title brown-text">Accomplishments</span>
+                <ul>
+                  <li>user can easily snap a photo of an item he or she wants to search for or get the URL of an item's
+                    photo to tell WaldoBot what to search for through <strong>natural language processing</strong>, and
+                    machine learning.
+                  </li>
+                  <li>Utilize Clarifai API to employ <strong>image recognition</strong> in JavaScript to develop a
+                    shopping assistant
+                    chatbot</li>
+                  <li>Purpose: Once an image of an item is uploaded (via URL or bytes), the image is run through API to
+                    return a string of keywords that can then be used to search the item.</li>
+                </ul>
                 <div class="card-action"></div>
               </div>
             </div>
           </div>
-          <!-- BlogSpire-->
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light"></div>
+              <div class="card-content"><span class="card-title activator teal-text hoverline">CryptoContext<i
+                    class="fas fa-ellipsis-v" style="float:right"></i></span>
+                <p>A web application that gives you the social context to your crypto</p>
+              </div>
+              <div class="card-reveal"><span class="card-title brown-text">Accomplishments</span>
+                <ul>
+                  <li></li>Designed to provide social contexts of cryptocurrencies: how posts on Facebook and Twitter
+                  reflect the positive or negative connotation individuals have regarding crypto<li></li>
+                  <li>Built with Bootstrap, Highcharts.js, Node.js, Express, and CryptoCompare API</li>
+                </ul>
+                <div class="card-action"><a aria-label="Visit CryptoContext" href="https://cryptocontext.info/"
+                    target="_blank" data-position="top" data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-external-link"></i></a><a aria-label="Visit the GitHub repo for Interpol8r project"
+                    href="https://github.com/ShannenB/CryptoTracker" target="_blank" data-position="top"
+                    data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                      class="fa fa-github"></i></a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
+      <h3 class="page-title white-text teal">Skills<a href="#awards"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container">
         <div class="card">
           <div class="card-content">
@@ -333,79 +408,92 @@
       </div>
     </section>
     <section id="awards" class="section scrollspy">
-      <h3 class="page-title white-text teal">Awards</h3>
+      <h3 class="page-title white-text teal">Awards<a href="#education"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
             <div class="card">
               <div class="card-content">
-                  <p><span class="card-title"><a href="https://ghc.anitab.org/" target="_blank" class="teal-text hoverline">Grace Hopper Celebration (GHC)</a></span></p>
-                  <p class="brown-text">AnitaB.org Foundation - GHC Scholar | May 2019</p>
-                  <ul>
-                    <li>Awarded to less than 700 students internationally to attend the largest four-day conference for women in computing all-expenses paid</li>
-                  </ul>
+                <p><span class="card-title"><a href="https://ghc.anitab.org/" target="_blank"
+                      class="teal-text hoverline">Grace Hopper Celebration (GHC)</a></span></p>
+                <p class="brown-text">AnitaB.org Foundation - GHC Scholar | May 2019</p>
+                <ul>
+                  <li>Awarded to less than 700 students internationally to attend the largest four-day conference for
+                    women in computing all-expenses paid</li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
-              <div class="card">
-                <div class="card-content">
-                    <p><span class="card-title"><a href="https://utdallas.edu/" target="_blank" class="teal-text hoverline">The University of Texas at Dallas</a></span></p>
-                    <p class="brown-text">UT Dallas Dean's List | Fall '17, Spring '18</p>
-                    <ul>
-                      <li>Jonsson School of Engineering and Computer Science</li>
-                      <li>Awarded to top 10% of students in their respective colleges</li>
-                    </ul>
-                </div>
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://utdallas.edu/" target="_blank"
+                      class="teal-text hoverline">The University of Texas at Dallas</a></span></p>
+                <p class="brown-text">UT Dallas Dean's List | Fall '17, Spring '18</p>
+                <ul>
+                  <li>Jonsson School of Engineering and Computer Science</li>
+                  <li>Awarded to top 10% of students in their respective colleges</li>
+                </ul>
               </div>
             </div>
+          </div>
         </div>
         <div class="row">
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-content">
-                        <p><span class="card-title"><a href="https://www.ncwit.org/project/aspirations-computing" target="_blank" class="teal-text hoverline">National Center for Women in IT</a></span></p>
-                        <p class="brown-text">Regional Winner in LA and OC | May '16, May '17</p>
-                        <ul>
-                            <li>Among 8,600 young women chosen for demonstrated interest and achievements in computing, leadership ability, academic performance</li>
-                        </ul>
-                    </div>
-                  </div>
-            </div>
-            <div class="col s12 m6">
-                
-                    <div class="card">
-                      <div class="card-content">
-                          <p><span class="card-title"><a href="https://www.nationalmerit.org/s/1758/start.aspx?gid=2&pgid=61" target="_blank" class="teal-text hoverline">National Merit Scholarship Corporation</a></span></p>
-                          <p class="brown-text">National Merit Finalist | May 2017</p>
-                          <ul>
-                            <li>In recognition of excellence on the National Merit Scholarship Qualifying Test (NMSQT) in California</li>
-                          </ul>
-                      </div>
-                    </div>
-                  </div>
-                
-          </div>
-          <div class="row">
-            <div class="col s12 m6">
-                <div class="card">
-                    <div class="card-content">
-                        <p><span class="card-title"><a href="http://asianpacificfund.org/what-we-do/scholarships/apply-for-scholarship/#banatao" target="_blank" class="teal-text hoverline">Banatao Family Filipino American Education Fund</a></span></p>
-                        <p class="brown-text">Banatao Scholar | May 2017</p>
-                        <ul>
-                          <li>One of 7 chosen among over 100 incoming Filipino-American STEM undergraduates from California</li>
-                          <li>Recognized for excellence and demonstrated interest in STEM as well as plans for higher education</li>
-                        </ul>
-                    </div>
-                  </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://www.ncwit.org/project/aspirations-computing"
+                      target="_blank" class="teal-text hoverline">National Center for Women in IT</a></span></p>
+                <p class="brown-text">Regional Winner in LA and OC | May '16, May '17</p>
+                <ul>
+                  <li>Among 8,600 young women chosen for demonstrated interest and achievements in computing, leadership
+                    ability, academic performance</li>
+                </ul>
               </div>
-              
             </div>
-          
+          </div>
+          <div class="col s12 m6">
+
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://www.nationalmerit.org/s/1758/start.aspx?gid=2&pgid=61"
+                      target="_blank" class="teal-text hoverline">National Merit Scholarship Corporation</a></span></p>
+                <p class="brown-text">National Merit Finalist | May 2017</p>
+                <ul>
+                  <li>In recognition of excellence on the National Merit Scholarship Qualifying Test (NMSQT) in
+                    California</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a
+                      href="http://asianpacificfund.org/what-we-do/scholarships/apply-for-scholarship/#banatao"
+                      target="_blank" class="teal-text hoverline">Banatao Family Filipino American Education
+                      Fund</a></span></p>
+                <p class="brown-text">Banatao Scholar | May 2017</p>
+                <ul>
+                  <li>One of 7 chosen among over 100 incoming Filipino-American STEM undergraduates from California</li>
+                  <li>Recognized for excellence and demonstrated interest in STEM as well as plans for higher education
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </section>
     <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+      <h3 class="page-title white-text teal">Education<a href="#contact"><i class="fas fa-chevron-circle-down"
+            style="float: right; color:white"></i></a></h3>
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
